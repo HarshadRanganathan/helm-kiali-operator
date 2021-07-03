@@ -2,6 +2,15 @@
 
 Helm chart for setting up Kiali Operator in your EKS cluster.
 
+Table of Contents
+=================
+
+   * [helm-kiali-operator](#helm-kiali-operator)
+      * [Pre-requisites](#pre-requisites)
+         * [Namespace](#namespace)
+         * [Config Updates](#config-updates)
+      * [Install/Upgrade Chart](#installupgrade-chart)
+
 ## Pre-requisites
 
 ### Namespace
