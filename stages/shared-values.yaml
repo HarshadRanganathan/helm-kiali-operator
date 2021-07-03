@@ -1,0 +1,20 @@
+cr:
+  create: true
+  spec:
+    istio_namespace: "istio-system"
+    deployment:
+      accessible_namespaces:
+      - istio-system
+      - # add your app namespaces here
+      namespace: "istio-system"
+      image_name: "quay.io/kiali/kiali"
+      image_version: "v1.32.0"
+    api:
+      namespaces:
+        exclude:
+        - "kube.*"
+    auth:
+      strategy: "anonymous" # TODO: change to 'token' in future
+    external_services:
+      prometheus:
+        url: http://prometheus-prometheus.platform:9090 # prometheus url - change to the namespace where prometheus is running
