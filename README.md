@@ -2,6 +2,16 @@
 
 Helm chart for setting up Kiali Operator in your EKS cluster.
 
+## Pre-requisites
+
+### Namespace
+
+Create a new namespace `kiali-operator` where we will install operator.
+
+```bash
+kubectl create namespace kiali-operator
+```
+
 ## Install/Upgrade Chart
 
 Run below commands to install/upgrade the chart.
